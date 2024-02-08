@@ -134,7 +134,7 @@ async function handlerLoadMore() {
   const { hits, totalHits } = dataPicture.data;
   renderMarkup(hits);
   galleryModal.refresh();
-  const counter = Math.cail(totalHits / 40);
+  const counter = Math.ceil(totalHits / 40);
   console.log(counter);
   if (currentPage >= counter) {
     loadMore.style.visibility = 'hidden';
