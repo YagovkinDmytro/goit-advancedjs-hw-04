@@ -135,8 +135,7 @@ async function handlerLoadMore() {
   renderMarkup(hits);
   galleryModal.refresh();
   const counter = Math.ceil(totalHits / 40);
-  console.log(counter);
-  if (currentPage >= counter) {
+  if (currentPage === counter) {
     loadMore.style.visibility = 'hidden';
     form.reset();
     iziToast.info({
