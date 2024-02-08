@@ -19,5 +19,5 @@ import{S as b,i as n,a as v}from"./assets/vendor-527658dd.js";(function(){const 
         </p>
     </div>
 </div></a>
-    `).join("");p.insertAdjacentHTML("beforeend",r)}async function P(){l+=1;const s=u.elements.searchQuery.value,r=await m(s,l),{hits:o,totalHits:i}=r.data;h(o),f.refresh();const e=Math.cail(i/40);console.log(e),l>=e&&(c.style.visibility="hidden",u.reset(),n.info({title:"",message:"We're sorry, but you've reached the end of search results.",position:"topRight",timeout:2e3}))}function S(){p.innerHTML="",c.style.visibility="hidden"}
+    `).join("");p.insertAdjacentHTML("beforeend",r)}async function P(){l+=1;const s=u.elements.searchQuery.value,r=await m(s,l),{hits:o,totalHits:i}=r.data;h(o),f.refresh();const e=Math.ceil(i/40);console.log(e),l>=e&&(c.style.visibility="hidden",u.reset(),n.info({title:"",message:"We're sorry, but you've reached the end of search results.",position:"topRight",timeout:2e3}))}function S(){p.innerHTML="",c.style.visibility="hidden"}
 //# sourceMappingURL=commonHelpers.js.map
